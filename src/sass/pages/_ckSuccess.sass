@@ -1,0 +1,57 @@
+@charset "UTF-8"
+.p-ckSuccess
+    &__hero
+        background-image: url("https://bit.ly/2P7GhNd")
+        width: 100%
+        height: 460px
+        background-position: center center
+        background-size: cover
+        position: relative
+        +mobile
+            height: 583px
+        &__title
+            margin-top: 2.1rem
+            background: url(../img/lg-付款成功.svg) no-repeat
+            width: 189.36px
+            height: 45.46px
+        &__btn
+            margin-top: 3.2rem
+            +mobile
+                width: 100%
+                position: absolute
+                bottom: 0px
+            a
+                display: block
+                text-align: center
+                width: 18.75rem
+                padding: 1.5rem 0px
+                font-size: 1.5rem
+                background: $yellow
+                font-weight: bold
+                color: $darkGreen
+                text-decoration: none
+                +mobile
+                    width: 100%
+                &:hover,&:active
+                    background: darken($yellow,10%)
+        &__process
+            width: 190px
+            &__part
+                width: 1.25rem
+                height: 1.25rem
+                border-radius: 100%
+                background: $darkGreen
+                &:not(:last-child):after
+                    content: ''
+                    display: block
+                    margin-left: 1.15rem
+                    width: 4.1rem
+                    border: 1px solid $darkGreen
+                    margin-top: -0.5rem
+            &__part_active
+                &:before
+                    content: '✓'
+                    color: $white
+                    font-size: 14px
+                    margin-left: 5.5px
+

@@ -1,0 +1,37 @@
+.m-checkoutForm
+    label
+        font-size: 1.25rem
+    input,select
+        height: 3.5rem
+        width: 100%
+        padding: 0px 20px 
+        color: $gray
+        background: $green
+        border: none
+        margin-top: 0.5rem
+    &__formGroup
+        &:not(:last-child)
+            margin-bottom: 1rem
+        &__twoForm
+            width: 50%
+            &:first-child
+                padding-right: 0.5rem
+        &__oneForm
+    &__btn
+        margin: 1.875rem -2.5rem 0px -2.5rem
+        +mobile
+            margin: 1.875rem -1.875rem 0px -1.875rem
+        a
+            display: block
+            cursor: pointer
+            border: none
+            color: $darkGreen
+            background: $yellow
+            text-align: center
+            padding: 16px 0px
+            text-decoration: none
+            width: 100%
+            font-size: 1.5rem
+            font-weight: bold
+            &:hover,&:active
+                background: darken($yellow,10%)

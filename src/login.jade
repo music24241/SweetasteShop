@@ -1,0 +1,41 @@
+extends layout.jade
+block content
+	.gl-container
+		.gl-g-row.p-login
+			.gl-row-10.h-flex
+				.p-login__account
+					.p-login__account__title 會員登入
+					ul.p-login__account__socialIcons
+						li
+							a(href="#")
+								img(src="./img/logo-facebook-lg.svg",width="90",height="20")
+						li
+							a(href="#")
+								img(src="./img/logo-google-lg.svg",width="99",height="25")
+						li
+							a(href="#")
+								img(src="./img/logo-yahoo-lg.svg",width="92",height="21")
+					form(action="/").p-login__account__form
+						.p-login__account__form__text.h-flex
+							i.fas.fa-user
+							input(type="text",placeholder="電子信箱/手機號碼")
+						.p-login__account__form__text.h-flex
+							i.fas.fa-key
+							input(type="password",placeholder="請輸入使用者密碼")
+						.p-login__account__form__ckbox
+							input(type="checkbox")
+							label 記住我
+					.p-login__account__form__btn
+						a(href="cart.html") 登入帳號
+				.p-login__connSocial
+					h1.p-login__connSocial__title —— 連結社群帳號 ——
+					ul.p-login__connSocial__icons
+						li
+							a(href="#")
+								img(src="./img/logo-facebook-lg.svg",width="108",height="20")
+						li
+							a(href="#")
+								img(src="./img/logo-google-lg.svg",width="95",height="20")
+						li
+							a(href="#")
+								img(src="./img/logo-yahoo-lg.svg",width="97",height="23")
