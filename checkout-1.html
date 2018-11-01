@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="../dist/css/all.css"/>
+  <title>甜點店商 (請使用Chrome觀看)</title>
+</head>
+<body>
+  <div class="l-header">
+    <div class="gl-container">
+      <div class="gl-f-row h-align-items-center">
+        <div class="l-header__menuBar"><i class="fas fa-bars"></i></div>
+        <div class="l-header__logo"><a href="index.html" class="h-block"><img src="./img/logo-all-dark.svg" alt=""/></a></div>
+        <ul class="l-header__menu h-flex">
+          <li><a href="index.html">首頁</a></li>
+          <li><a href="product.html">甜點</a></li>
+          <li><a href="login.html">登入</a></li>
+        </ul>
+        <div class="l-header__cart"><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></div>
+      </div>
+    </div>
+  </div>
+  <div class="p-checkout">
+    <div class="gl-container">
+      <div class="gl-g-row">
+        <div class="p-checkout__profile">
+          <div class="p-checkout__profile__title h-flex h-justify-content-between">
+            <h3>運送</h3>
+            <div class="m-processBar h-flex h-justify-content-between h-align-items-center">
+              <div class="m-processBar__outerCircle m-processBar__outerCircle_success"><i class="fas fa-check"></i></div>
+              <div class="m-processBar__outerCircle">
+                <div class="m-processBar__outerCircle__innerCircle"></div>
+              </div>
+              <div class="m-processBar__outerCircle">
+                <div class="m-processBar__outerCircle__innerCircle"></div>
+              </div>
+            </div>
+          </div>
+          <div class="m-checkoutForm">
+            <div class="m-checkoutForm__formGroup h-flex">
+              <div class="m-checkoutForm__formGroup__twoForm">
+                <label for="">姓氏</label>
+                <input type="text" placeholder="王"/>
+              </div>
+              <div class="m-checkoutForm__formGroup__twoForm">
+                <label for="">名字</label>
+                <input type="text" placeholder="小名"/>
+              </div>
+            </div>
+            <div class="m-checkoutForm__formGroup">
+              <label for="">電話</label>
+              <input type="text" placeholder="0912345678"/>
+            </div>
+            <div class="m-checkoutForm__formGroup">
+              <label for="">地址</label>
+              <div class="h-flex">
+                <div class="m-checkoutForm__formGroup__twoForm">
+                  <select>
+                    <option value="高雄市">高雄市</option>
+                  </select>
+                </div>
+                <div class="m-checkoutForm__formGroup__twoForm">
+                  <select>
+                    <option value="幸福路">新興區</option>
+                  </select>
+                </div>
+              </div>
+              <input type="text" placeholder="幸福路520號"/>
+            </div>
+            <div class="m-checkoutForm__btn"><a href="checkout-2.html">下一步</a></div>
+          </div>
+        </div>
+        <div class="p-checkout__detail">
+          <div class="p-checkout__detail__summary">
+            <h1>訂單摘要</h1>
+            <ul class="p-checkout__detail__summary__list">
+              <li class="h-flex h-justify-content-between">
+                <h3>小計</h3><span>NT$ 450</span>
+              </li>
+              <li class="h-flex h-justify-content-between">
+                <h3>運費</h3><span>NT$ 450</span>
+              </li>
+              <li class="p-checkout__detail__summary__list__sumItem h-flex h-justify-content-between">
+                <h3>總計</h3><span>NT$ 450</span>
+              </li>
+            </ul>
+          </div>
+          <div class="p-checkout__detail__shopList">
+            <h1>購物清單</h1>
+            <ul class="p-checkout__detail__shopList__list">
+              <li class="h-flex h-justify-content-between">
+                <div class="p-checkout__detail__shopList__list__img"></div>
+                <div class="p-checkout__detail__shopList__list__item">
+                  <h3>焦糖馬卡龍（2）</h3><span>NT$ 900</span>
+                </div>
+              </li>
+              <li class="h-flex h-justify-content-between">
+                <div class="p-checkout__detail__shopList__list__img"></div>
+                <div class="p-checkout__detail__shopList__list__item">
+                  <h3>焦糖馬卡龍（2）</h3><span>NT$ 900</span>
+                </div>
+              </li>
+              <li class="h-flex h-justify-content-between">
+                <div class="p-checkout__detail__shopList__list__img"></div>
+                <div class="p-checkout__detail__shopList__list__item">
+                  <h3>焦糖馬卡龍（2）</h3><span>NT$ 900</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="l-register">
+    <div class="gl-container">
+      <div class="gl-g-row">
+        <div class="gl-row-10 gl-f-row h-align-items-center">
+          <div class="l-register__title h-flex"><img src="./img/logo-light.svg" alt="logo" width="40" height="40"/>
+            <h3 class="h-flex h-align-items-center">訂閱你我的甜蜜郵件</h3>
+          </div>
+          <form action="/" class="l-register__form h-flex"><i class="fas fa-envelope l-register__form__icon"></i>
+            <input type="text" class="l-register__form__text"/>
+            <button class="l-register__form__btn"><i class="fas fa-arrow-right"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="l-footer">
+    <div class="gl-container">
+      <div class="gl-g-row">
+        <div class="gl-row-10">
+          <div class="l-footer__contact gl-f-row">
+            <div class="l-footer__contact__content h-flex h-flex-column h-justify-content-between"><img src="./img/logotype-lg-dark.svg" width="171" height="26"/>
+              <ul class="l-footer__contact__content__info h-align-self-end">
+                <li> <a href="tel:+0712345678"> </a>07-1234-5678 </li>
+                <li><a href="mailto:sweetaste@email.com"></a>sweetaste@email.com</li>
+                <li><a href="https://www.google.com.tw/maps/place/800%E9%AB%98%E9%9B%84%E5%B8%82%E6%96%B0%E8%88%88%E5%8D%80/@22.6284345,120.2987625" target="_blank"> </a>800 高雄市新興區幸福路 520 號</li>
+              </ul>
+            </div>
+            <div class="l-footer__contact__title"><img src="./img/footer__title.svg" width="59" height="218"/></div>
+          </div>
+          <div class="l-footer__social gl-f-row">
+            <ul class="l-footer__social__icons h-flex">
+              <li><a href=""><img src="img/ic-line@.svg" width="32" height="32"/></a></li>
+              <li><a href=""><img src="img/ic-facebook.svg" width="32" height="32"/></a></li>
+            </ul>
+            <div class="l-footer__social__copyright">© 2018 Sweetaste* All Rights Reserved</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
