@@ -1,0 +1,147 @@
+// body *
+//     border: 1px solid
+.p-login
+    margin-top: 1.375rem
+    +pad-below
+        margin-bottom: 30px
+    +mobile
+        margin-top: 0px
+        background: $darkGreen
+        margin-bottom: 0px
+    .gl-row-10
+        +pad-below
+            grid-column: 1/13
+        +mobile
+            flex-direction: column
+    &__account
+        padding-top: 40px
+        width: 50%
+        max-width: 50%
+        background: $darkGreen
+        color: $green
+        +pad-below
+            height: auto
+            width: 60%
+            max-width: 60%
+        +mobile
+            width: 100%
+            max-width: 100%
+        &__title
+            line-height: 2.25rem
+            font-size: 2.25rem
+            font-weight: bold
+            margin-bottom: 2.5rem
+            text-align: center
+        &__socialIcons
+            display: none
+            margin-left: -1.875rem
+            margin-right: -1.875rem
+            background: $green
+            padding: 1.875rem
+            +mobile
+                display: flex
+            li
+                width: 33.333%
+                a
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    height: 3.5rem
+                    background: white
+                    border: 1px solid $green
+                    &:hover,&:active
+                        background: #f2efef
+
+        &__form
+            position: relative
+            padding: 0px 1.875rem
+            +mobile
+                padding: 0px
+                margin-top: 1.875rem
+            &__text
+                color: $darkGreen
+                width: 100%
+                margin-bottom: 1rem
+                background: $green
+                i
+                    margin-top: 1.2rem
+                    margin-left: 1.25rem
+                input
+                    margin-left: 1.3rem
+                    width: 23.75rem
+                    height: 3.5rem
+                    border: none
+                    background: none
+                    font-size: 1rem
+                    &:focus
+                        outline: none
+            &__ckbox
+                margin-bottom: 1.375rem
+                input
+                    width: 1rem
+                    height: 1rem
+            &__btn
+                a
+                    cursor: pointer
+                    border: none
+                    display: block
+                    text-decoration: none
+                    color: $darkGreen
+                    background: $yellow
+                    text-align: center
+                    padding: 16px 0px
+                    width: 100%
+                    font-size: 1.5rem
+                    font-weight: bold
+                    +mobile
+                        margin-left: -1.875rem
+                        margin-right: -1.875rem
+                        width: calc(100% + 60px)
+                    &:hover,&:active
+                        background: darken($yellow,10%)
+    &__connSocial
+        margin-top: 1rem
+        margin-bottom: 1rem
+        background: $green
+        width: 50%
+        padding: 0px 1.875rem
+        +pad-below
+            margin-top: 0.5rem
+            width: 40%
+            max-width: 40%
+            position: relative
+        +mobile
+            display: none
+        &__title
+            text-align: center
+            margin-top: 2.5rem
+            margin-bottom: 2.25rem
+            line-height: 1.5rem
+            font-size: 1.5rem
+            color: $gray
+            +pad-below
+                display: none
+            +mobile
+                font-size: 2.25rem
+                margin-top: 1.875rem
+                margin-bottom: 1.875rem
+        &__icons
+            +pad-below
+                position: absolute
+                top: 50%
+                left: 50%
+                transform: translate(-50%,-50%)
+        &__icons a
+            display: flex
+            justify-content: center
+            align-items: center
+            width: 100%
+            height: 3.5rem
+            background: $white
+            margin-bottom: 1rem
+            &:hover,&:active
+                background: $green
+                border: 1px solid $darkGreen
+            +pad-below
+                padding: 10px
+            
